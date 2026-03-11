@@ -14,11 +14,11 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public boolean createUser(String name, String email) {
-        User user = new User(name, email);
-        User savedUser = userRepository.save(user);
-        LOGGER.info("User created successfully with id: {}", savedUser.getId());
-        return savedUser != null;
-    }
+//    public boolean createUser(String name, String email) {
+//        User user = new User(name, email);
+//        User savedUser = userRepository.save(user);
+//        LOGGER.info("User created successfully with id: {}", savedUser.getId());
+//        return savedUser != null;
+//    }
 
 }
