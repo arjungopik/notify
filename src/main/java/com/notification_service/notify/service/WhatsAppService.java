@@ -13,19 +13,19 @@ public class WhatsAppService {
     public WhatsAppService() {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
     }
-
-    public void sendMenu(String to) {
-
-        Message.creator(
-                new com.twilio.type.PhoneNumber(to),
-                new com.twilio.type.PhoneNumber("whatsapp:+14155238886"), // sandbox number
-                ""
-        ).setPersistentAction(
-                java.util.List.of(
-                        URI.create("button:Take Appointment"),
-                        URI.create("button:Cancel Appointment"),
-                        URI.create("button:Reschedule")
-                )
-        ).create();
-    }
+//
+//    public void sendMenu(String to) {
+//
+//        Message.creator(
+//                new com.twilio.type.PhoneNumber(to),
+//                new com.twilio.type.PhoneNumber("whatsapp:+14155238886"), // sandbox number
+//                ""
+//        ).setPersistentAction(
+//                java.util.List.of(
+//                        URI.create("button:Take Appointment"),
+//                        URI.create("button:Cancel Appointment"),
+//                        URI.create("button:Reschedule")
+//                )
+//        ).create();
+//    }
 }
